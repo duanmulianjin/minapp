@@ -1,18 +1,17 @@
 <!--pages/home/home.wxml-->
-<view class="home-main use-base-style">
-  <swiper class="swiper" indicator-dots autoplay interval="5000" duration="500">
-    <block wx:for="{{topSlides}}" wx:key="index">
-      <swiper-item>
-        <view class="swiper-item">
-          <image src="{{item.imgUrl}}"></image>
-        </view>
-      </swiper-item>
-    </block>
+<view class="use-base-style">
+  <swiper class="screen-swiper" indicator-dots circular autoplay interval="5000">
+    <swiper-item wx:for="{{topSlides}}" wx:key="index">
+      <image src="{{item.imgUrl}}" mode="aspectFill"></image>
+    </swiper-item>
   </swiper>
-  <view class="menu-box">
-    <view data-url="{{item.url}}" data-type="{{item.type}}" class="menu-item" wx:for="{{menuList}}" wx:key="index" bindtap="doMenuTap">
-      <image src="{{item.icon}}"></image>
-      <view>{{item.title}}</view>
+  <view class="cu-list card-menu grid col-3">
+    <view class="cu-item" data-url="{{item.url}}" data-type="{{item.type}}" wx:for="{{menuList}}" wx:key="index"
+      bindtap="doMenuTap">
+      <view>
+        <image src="{{item.icon}}" style="width:60rpx" mode="widthFix"></image>
+      </view>
+      <text>{{item.title}}</text>
     </view>
   </view>
 </view>
