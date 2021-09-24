@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/oldindex/index",
     "pages/basics/home/home",
     "pages/basics/layout/layout",
     "pages/basics/button/button",
@@ -34,11 +35,12 @@
     "pages/about/test/filter",
     "pages/about/home/home",
     "pages/plugin/drawer/drawer",
-    "pages/plugin/verticalnav/verticalnav"
+    "pages/plugin/verticalnav/verticalnav",
+    "pages/sendmsg/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
-    "navigationBarTitleText": "Color UI",
+    "navigationBarTitleText": "听枫亭",
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
